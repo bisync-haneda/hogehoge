@@ -1,3 +1,5 @@
+#!groovy
+
 node('mac_server') {
 	stage 'ホスト名の表示'
 	sh 'echo `hostname`'
