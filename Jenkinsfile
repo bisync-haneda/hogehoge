@@ -1,5 +1,10 @@
 #!groovy
 
+def token = input1
+def distribution_key = input2
+def message = input3
+def release_note = input4
+
 node('master') {
 	stage ('ホスト名の表示') {
 		sh 'echo `hostname`'}
@@ -8,3 +13,5 @@ node('master') {
 	stage ('シェル実行') {
 		sh 'sh test.sh'}
 }
+
+println envVars[distribution_key]
