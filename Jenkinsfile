@@ -14,4 +14,5 @@ node('master') {
 		sh 'sh test.sh'}
 }
 
+def envVars= job.lastBuild.properties.get("envVars")
 println envVars[distribution_key]
