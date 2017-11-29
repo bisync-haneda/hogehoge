@@ -1,10 +1,10 @@
 #!groovy
 
-node('mac_server') {
-	stage 'ホスト名の表示'
-	sh 'echo `hostname`'
-	stage 'mac_server-pwd表示'
+node('master') {
+	stage ('ホスト名の表示') {
+		sh 'echo `hostname`'}
+	stage 'show dir'
 	sh 'pwd'
-	stage 'ビルドシェル実行'
-	sh 'sh /Users/bisync/jenkins/workspace/jobname/test.sh'
+	stage 'シェル実行'
+	sh 'sh test.sh'
 }
