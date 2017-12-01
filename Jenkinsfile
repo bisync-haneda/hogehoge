@@ -12,7 +12,7 @@ node('kakutora-slave') {
 	stage ('show dir') {
 		sh 'pwd'}
 	stage ('シェル実行') {
-		sh 'sh salmon.sh' token}
+		sh 'sh salmon.sh `echo token`'}
 }
 
 echo token
