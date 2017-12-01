@@ -14,5 +14,7 @@ node('master') {
 		sh 'sh test.sh'}
 }
 
-echo svar01
-echo svar02
+echo token
+echo distribution_key
+echo message
+echo release_note
