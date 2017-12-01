@@ -5,7 +5,8 @@
 //def message = "input3"
 //def release_note = "input4"
 
-node('master') {
+//node('master') {
+node('kakutora-slave') {
 	stage ('ホスト名の表示') {
 		sh 'echo `hostname`'}
 	stage ('show dir') {
