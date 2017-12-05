@@ -11,8 +11,10 @@ node('kakutora-slave') {
 		sh 'echo `hostname`'}
 	stage ('show dir') {
 		sh 'pwd'}
-	stage ('シェル実行') {
-		sh 'sh salmon.sh ${distribution_key}'}
+//	stage ('シェル実行') {
+//		sh 'sh salmon.sh ${distribution_key}'}
+	stage ('shell-test') {
+		sh 'sh salmon.sh'}
 }
 
 echo token
